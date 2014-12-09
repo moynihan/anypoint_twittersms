@@ -27,7 +27,7 @@ http://www.mulesoft.org/schema/mule/twilio http://www.mulesoft.org/schema/mule/t
     </flow>
     <flow name="get-status" doc:name="get-status">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="getstatus" doc:name="HTTP"/>
-        <twitter:get-user-timeline-by-user-id config-ref="Twitter" userId="2922997999" count="1" doc:name="Twitter"/>
+        <twitter:get-user-timeline-by-user-id config-ref="Twitter" userId="2922997999" count="1" doc:name="Get Twitter Status"/>
         <logger message="logger #[payload[0].text]" level="INFO" doc:name="Logger"/>
         <set-variable variableName="status" value="#[payload[0].text]" doc:name="set status"/>
         <twilio:send-sms-message config-ref="Twilio" accountSid="${twilio.account.sid}" body="Your Status Is: #[flowVars[&quot;status&quot;]]" from="${twilio.from.phone.number}" to="${twilio.to.phone.number}" doc:name="Send Notification to Phone"/>
