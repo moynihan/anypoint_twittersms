@@ -32,6 +32,6 @@ Update your twitter status and send to sms
 http://localhost:8081/updateandsms?newstatus=NewStatusGoesHere
 
 Untested Feature since im not hosting publicly and cannot test.
-Twilio allows webhooks, so theoretically you can set sms messages with 'get status' to hit the /getstatus link, else git the update status link.
+Twilio allows webhooks, so theoretically you can set sms messages with 'get status' to hit the /getstatus link, else send to the /updateandsms?newstatus={message.body}
 
 
