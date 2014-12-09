@@ -1,0 +1,9 @@
+twitter.accessKey=
+twitter.accessSecret=
+twitter.consumerKey=
+twitter.consumerSecret=
+
+twilio.account.sid=
+twilio.auth.token=
+twilio.from.phone.number=
+twilio.to.phone.number=
