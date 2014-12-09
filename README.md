@@ -5,8 +5,11 @@ With a simple webhook from twilio, you can get or set your twitter status and ge
 
 prerequisites
 1. Anypoint Studio
+
 2. Twilio Connector for anypoint studio (installed through help->install software)
+
 3. Twilio Account
+
 4. Twitter account
 
 You'll need to create a twitter app to obtain all the api keys you need
@@ -15,7 +18,9 @@ Follow the "Configure Twitter" example here: http://blogs.mulesoft.org/mule-scho
 
 Getting started
 1. Open the project in mule
+
 2. fill in the mule-app.properties.sample under src/main/app/ the delete .sample from the end of the file name
+
 3. Run the app
 
 Send your twitter status to sms
